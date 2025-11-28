@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de Alfabetización Infanto-Juvenil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .slide {
+            display: none;
+            padding: 40px;
+            text-align: center;
+            animation: fadeIn 0.5s ease-in;
+        }
+        .slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .svg-drawing {
+            width: 200px;
+            height: 150px;
+            margin: 20px auto;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #eee;
+        }
+        button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .progress {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .menu {
+            margin-top: 20px;
+        }
+        .menu select {
+            padding: 5px;
+        }
+        .reflection {
+            background: #e9f7ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="progress">Diapositiva 1 de 10</div>
+        
+        <!-- Diapositiva 1 -->
+        <div class="slide active" id="slide1">
+            <h1>Taller de Alfabetización Infanto-Juvenil</h1>
+            <p><strong>Temáticas seleccionadas:</strong></p>
+            <p>Habilitar un espacio de diálogo y sensibilidad</p>
+            <p>La evolución de la lectura</p>
+            <svg class="svg-drawing" viewBox="0 0 200 150">
+                <!-- Dibujo: Escuela con libros y pizarra -->
+                <rect x="50" y="50" width="100" height="60" fill="#8B4513" /> <!-- Pizarra -->
+                <rect x="60" y="60" width="80" height="40" fill="#000" /> <!-- Pizarra negra -->
+                <rect x="10" y="80" width="30" height="40" fill="#654321" /> <!-- Libro -->
+                <rect x="160" y="80" width="30" height="40" fill="#654321" /> <!-- Libro -->
+                <text x="100" y="140" text-anchor="middle" font-size="12" fill="#333">Escuela y Literatura</text>
+            </svg>
+            <div class="reflection">
+                <p><strong>Reflexión:</strong> ¿Cómo crees que un espacio de diálogo puede cambiar la experiencia en el aula?</p>
+            </div>
+        </div>
+        
+        <!-- Diapositiva 2 -->
+        <div class="slide" id="slide2">
+            <h2>Tema 1: Introducción</h2>
+            <p><strong>Habilitar un espacio de diálogo y sensibilidad</strong></p>
+            <p>El formato tradicional de clase genera distancia.</p>
+            <p>Temas sensibles: identidad, género, emociones, desigualdad.</p>
+            <p>Necesidad de una mediación docente más abierta y humanizada.</p>
+            <p><em>Autor de referencia: Berta Braslavsky.</em></p>
+            <svg class="svg-drawing" viewBox="0 0 200 150">
+                <!-- Dibujo: Personas dialogando en un aula -->
+                <circle cx="50" cy="70" r="15" fill="#FFD700" /> <!-- Cabeza 1 -->
+                <circle cx="150" cy="70" r="15" fill="#FFD700" /> <!-- Cabeza 2 -->
+                <line x1="65" y1="70" x2="135" y2="70" stroke="#333" stroke-width="2" /> <!-- Línea de diálogo -->
+                <text x="100" y="140" text-anchor="middle" font-size="12" fill="#333">Diálogo en el Aula</text>
+            </svg>
+            <div class="reflection">
+                <p><strong>Reflexión:</strong> ¿Qué temas sensibles has discutido en clase y cómo te hicieron sentir?</p>
+            </div>
+        </div>
+        
+        <!-- Diapositiva 3 -->
+        <div class="slide" id="slide3">
+            <h2>Tema 1: Libro álbum</h2>
+            <p>Combina imagen + palabra = múltiples sentidos.</p>
+            <p>Permite trabajar temas tabú o existenciales.</p>
+            <p>Favorece la expresión emocional y la reflexión conjunta.</p>
+            <svg class="svg-drawing" viewBox="0 0 200 150">
+                <!-- Dibujo: Libro con imágenes y palabras -->
+                <rect x="50" y="50" width="100" height="80" fill="#8B4513" /> <!-- Cubierta -->
+                <rect x="60" y="60" width="80" height="60" fill="#FFF" /> <!-- Páginas -->
+                <circle cx="80" cy="80" r="10" fill="#FF0000" /> <!-- Imagen -->
+                <text x="120" y="90" font-size="10" fill="#333">Palabra</text>
+                <text x="100" y="140" text-anchor="middle" font-size="12" fill="#333">Libro Álbum</text>
+            </svg>
+            <div class="reflection">
+                <p><strong>Reflexión:</strong> ¿Cómo un libro álbum puede ayudar a expresar emociones difíciles?</p>
+            </div>
+        </div>
+        
+        <!-- Diapositiva 4 -->
+        <div class="slide" id="slide4">
+            <h2>Tema 1: Mediación docente</h2>
+            <p>El docente como mediador sensible.</p>
+            <p>Escucha, acompañamiento, habilitación del diálogo.</p>
+            <p>Lectura como construcción cultural (Braslavsky).</p>
+            <p>Emociones como parte del proceso lector.</p>
+            <svg class="svg-drawing" viewBox="0 0 200 150">
+                <!-- Dibujo: Docente con libro y corazón -->
+                <circle cx="100" cy="60" r="20" fill="#FFD700" /> <!-- Cabeza docente -->
+                <rect x="80" y="80" width="40" height="50" fill="#007bff" /> <!-- Cuerpo -->
+                <rect x="90" y="90" width="20" height="30" fill="#654321" /> <!-- Libro -->
+                <path d="M 100 50 Q 110 40 120 50 Q 110 60 100 50" fill="#FF0000" /> <!-- Corazón -->
+                <text x="100" y="140" text-anchor="middle" font-size="12" fill="#333">Mediación Docente</text>
+            </svg>
+            <div class="reflection">
+                <p><strong>Reflexión:</strong> ¿Qué rol juega el docente en tu proceso de lectura?</p>
+            </div>
+        </div>
+        
+        <!-- Diapositiva 5 -->
+        <div class="slide" id="slide5">
+            <h2>Tema 1: Cierre</h2>
+            <p>El libro álbum abre conversaciones profundas.</p>
+            <p>Articula experiencia personal + sentido crítico.</p>
+            <p>El aula se vuelve espacio de encuentro y sensibilidad.</p>
+            <svg class="svg-drawing" viewBox="0 0 200 150">
+                <!-- Dibujo: Grupo discutiendo alrededor de un libro -->
+                <circle cx="70" cy="70" r="10" fill="#FFD700" />
+                <circle cx="100" cy="70" r="10" fill="#FFD700" />
+                <circle cx="130" cy="70" r="10" fill="#FFD700" />
+                <rect x="90" y="80" width="20" height="30" fill="#654321" />
+                <text x="100" y="140" text-anchor="middle" font-size="12" fill="#333">Conversación Profunda</text>
+            </svg>
+            <div class="reflection">
+                <p><strong>Reflexión:</strong> ¿Cómo el aula puede convertirse en un espacio más humano?</p>
+            </div>
+        </div>
+        
+        <!-- Diapositiva 6 -->
+        <div class="slide" id="slide6">
+            <h2>Conexión entre temáticas</h2>
+            <p>Ambas problemáticas se vinculan por la pregunta:</p>
+            <p><em>¿Cómo acompañar prácticas lectoras en contextos de cambio?</em></p>
+            <p>Primera dimensión: lo sensible y simbólico.</p>
+            <p>Segunda dimensión: lo tecnológico e histórico.</p>
+            <svg class="svg-drawing" viewBox="0 0 200 150">
+                <!-- Dibujo: Puente conectando dos mundos -->
+                <rect x="0" y="100" width="200" height="10" fill="#8B4513" /> <!-- Puente -->
+                <circle cx="50" cy="90" r="15" fill="#FFD700" /> <!-- Lado sensible -->
+                <circle cx="150" cy="90" r="15" fill="#00FF00" /> <!-- Lado tecnológico -->
+                <text x="100" y="140" text-anchor="middle" font-size="12" fill="#333">Conexión Temática</text>
+            </svg>
+            <div class="reflection">
+                <p><strong>Reflexión:</strong> ¿Cómo equilibrar lo sensible con lo tecnológico en la lectura?</p>
+            </div>
+        </div>
+        
+        <!-- Diapositiva 7 -->
+        <div class="slide" id="slide7">
+            <h2>Tema 2: Introducción</h2>
+            <p><strong>La evolución de la lectura</strong></p>
+            <p>Transformaciones tecnológicas.</p>
+            <p>Lecturas fragmentadas, digitales, multimodales.</p>
+            <p>Tensión docente: esperanza y temor.</p>
+            <p><em>Autora de referencia: Anne-Marie Chartier.</em></p>
+            <svg class="svg-drawing" viewBox="0 0 200 150">
+                <!-- Dibujo: Libro y pantalla digital -->
+                <rect x="40" y="70" width="30" height="40" fill="#654321" /> <!-- Libro -->
+                <rect x="130" y="70" width="30" height="40" fill="#000" /> <!-- Pantalla -->
+                <circle cx="145" cy="85" r="5" fill="#FFF" /> <!-- Texto en pantalla -->
+                <text x="100" y="140" text-anchor="middle" font-size="12" fill="#333">Evolución de la Lectura</text>
+            </svg>
+            <div class="reflection">
+                <p><strong>Reflexión:</strong> ¿Qué cambios tecnológicos has visto en cómo lees?</p>
+            </div>
+        </div>
+        
+        <!-- Diapositiva 8 -->
+        <div class="slide" id="slide8">
+            <h2>Tema 2: Aportes de Chartier</h2>
+            <p>Las prácticas lectoras son históricas, no fijas.</p>
+            <p>La lectura profunda convive con nuevas formas.</p>
+            <p>La incertidumbre docente reorganiza la enseñanza.</p>
+            <svg class="svg-drawing" viewBox="0 0 200 150">
+                <!-- Dibujo: Reloj y libro evolucionando -->
+                <circle cx="100" cy="75" r="30" fill="#FFD700" /> <!-- Reloj -->
+                <line x1="100" y1="60" x2="100" y2="90" stroke="#333" stroke-width="2" /> <!-- Aguja -->
+                <rect x="80" y="100" width="40" height="30" fill="#654321" /> <!-- Libro -->
+                <text x="100" y="140" text-anchor="middle" font-size="12" fill="#333">Historia y Cambio</text>
+            </svg>
+            <div class="reflection">
+                <p><strong>Reflexión:</strong> ¿Cómo la historia influye en nuestras prácticas lectoras actuales?</p>
+            </div>
+        </div>
+        
+        <!-- Diapositiva 9 -->
+        <div class="slide" id="slide9">
+            <h2>Tema 2: Desafíos actuales</h2>
+            <p>Redefinir los objetivos de enseñar a leer.</p>
+            <p>Conservar lo valioso de la tradición.</p>
+            <p>Integrar competencias digitales, visuales y críticas.</p>
+            <svg class="svg-drawing" viewBox="0 0 200 150">
+                <!-- Dibujo: Docente equilibrando libro y computadora -->
+                <circle cx="100" cy="60" r="20" fill="#FFD700" />
+                <rect x="80" y="80" width="40" height="50" fill="#007bff" />
+                <rect x="85" y="85" width="15" height="20" fill="#654321" /> <!-- Libro -->
+                <rect x="105" y="85" width="15" height="20" fill="#000" /> <!-- Computadora -->
+                <text x="100" y="140" text-anchor="middle" font-size="12" fill="#333">Desafíos Docentes</text>
+            </svg>
+            <div class="reflection">
+                <p><strong>Reflexión:</strong> ¿Qué competencias crees que necesitas para leer en el mundo digital?</p>
+            </div>
+        </div>
+        
+        <!-- Diapositiva 10 -->
+        <div class="slide" id="slide10">
+            <h2>Cierre general</h2>
+            <p>Enseñar a leer hoy implica sensibilidad, crítica y flexibilidad.</p>
+            <p>Braslavsky: la lectura como experiencia cultural profunda.</p>
+            <p>Chartier: la lectura como práctica en transformación.</p>
+            <p>El desafío docente: formar lectores críticos en un mundo complejo.</p>
+            <svg class="svg-drawing" viewBox="0 0 200 150">
+                <!-- Dibujo: Mundo con libros y lectores -->
+                <circle cx="100" cy="75" r="40" fill="#00FF00" /> <!-- Mundo -->
+                <rect x="85" y="65" width="15" height="20" fill="#654321" /> <!-- Libro -->
+                <circle cx="95" cy="55" r="5" fill="#FFD700" /> <!-- Lector -->
+                <text x="100" y="140" text-anchor="middle" font-size="12" fill="#333">Mundo con Libros</text>
+            </svg>
+            <div class="reflection">
+                <p><strong>Reflexión:</strong> ¿Cómo formar lectores críticos en un mundo complejo?</p>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button id="prev">Anterior</button>
+            <button id="next">Siguiente</button>
+        </div>
+        
+        <div class="menu">
+            <label for="slideSelect">Ir a diapositiva:</label>
+            <select id="slideSelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
